@@ -1,0 +1,36 @@
+body{
+    background-color: thistle;
+}
+
+h1{
+    color: red;
+    text-align: center;
+    background-color: royalblue;
+}
+
+div.firstdiv p{
+    color: seagreen;
+}
+
+p::first-letter{
+    color: red;
+    font-size: xx-large;
+}
+
+div.seconddiv{
+    background-color: yellow;
+}
+
+div.seconddiv:hover  p.disapear{
+    display: block;
+    color: yellow;
+    background-color: black;
+    font-size: xx-large;
+    font-variant: small-caps;
+    text-align: center;
+}
+
+p.disapear{
+    display: none;
+}
+
