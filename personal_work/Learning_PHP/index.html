@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="frm1" action="/action_page.php">
+        Okurka Polivka: <input type="number" name="OkurkaPolivka" min="0" value="0"><br>
+        Brokolice Placka: <input type="number" name="BrokolicePlacka" min="0" value="0"><br><br>
+        <input type="submit" value="Submit">
+      </form> 
+      
+      <p>Click "Try it" to display the value of each element in the form.</p>
+      
+      <button onclick="myFunction()">Try it</button>
+      
+      <p id="demo"></p>
+      
+      <script>
+      function myFunction() {
+        var x = document.getElementById("frm1");
+        var text = "";
+        var i;
+        for (i = 0; i < x.length - 1 ;i++) {
+          text += x.elements[i].name + " " + x.elements[i].value + "x" + "<br>";
+        }
+        document.getElementById("demo").innerHTML = text;
+      }
+      </script>
+</body>
+</html>

@@ -1,3 +1,6 @@
+$dark-back-color: #020c20;
+$dark-back-tcolor: #ffebcd;
+
 
 body{
     overflow-x:hidden;
@@ -5,7 +8,7 @@ body{
     background-color: #63275e;
 }
 .header{
-    background: #020c20;
+    background: $dark-back-color;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     padding: 0px;
@@ -40,7 +43,7 @@ nav{
     align-content: center;
     align-items: center;
     width: 20em;
-    color: #ffebcd;
+    color: $dark-back-tcolor;
 }
 
 .header-container{
@@ -93,14 +96,14 @@ a.anchor {
 }
 
 .end{
-    background: #020c20;
+    background: $dark-back-color;
     display: flex;
     justify-content: space-around;
     align-content: center;
     flex-direction: row;
     align-items: center;
 
-    color: #ffebcd;
+    color: $dark-back-tcolor;
 }
 
 .end-logo{

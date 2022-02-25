@@ -1,0 +1,30 @@
+.container{
+    margin: auto;
+    width: 60%;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.grid-item{
+    display: block;
+    background-color: cornflowerblue;
+    padding: 10px;
+}
+
+.grid-item:first-child{
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.grid-item:last-child{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+p{
+    margin: 0;
+}
