@@ -1,0 +1,40 @@
+.recom{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.recom-main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+
+
+    width: 100%;
+}
+
+.recom-main-item{
+    width: 20%;
+    
+    img{
+        width: 100%;
+        height: auto;
+    }
+
+    h3{
+        text-transform: uppercase;
+    }
+    
+    p{
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1.125em;
+        line-height: 22px;
+    }
+}

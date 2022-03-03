@@ -1,0 +1,37 @@
+.hero-img{
+    position: relative;
+    width: 100%;
+    img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+.section1{
+    position: absolute;
+    width: 650px;
+    height: 350px;
+    bottom: 30px;
+    right: 30px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+
+    padding: 10px;
+
+    background-color: rgba(124, 116, 116, 0.600);
+
+    color: #F8F7EC;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    letter-spacing: 0.1em;
+
+    h1{
+        width: 100%;
+    }
+
+    p{
+        font-size: 1.5em;
+    }
+}
