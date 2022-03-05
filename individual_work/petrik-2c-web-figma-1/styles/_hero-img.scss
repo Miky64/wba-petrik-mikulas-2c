@@ -35,3 +35,31 @@
         font-size: 1.5em;
     }
 }
+
+@media only screen and (max-width: 960px) {
+    .hero-img{
+        width: 100%;
+        padding-top: 50px;
+        img{
+            display: none;
+        }
+    }
+
+    .section1{
+        position: initial;
+        width: 80%;
+        height: auto;
+        margin: auto;
+        padding: 10px;
+        background: #7C7474;
+
+
+        h1{
+            font-size: 1.5em;
+        }
+
+        p{
+            font-size: .8125em;
+        }
+    }
+}
