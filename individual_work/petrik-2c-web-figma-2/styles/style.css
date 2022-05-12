@@ -1,0 +1,293 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #252E2E;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.header {
+  height: 130px;
+  background-color: #243636;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: #F0F6F0;
+}
+
+.header-logo {
+  width: 10%;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 60%;
+}
+
+.nav-butt {
+  width: 30%;
+  height: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nav-butt div {
+  text-align: center;
+}
+
+.nav-butt:hover {
+  background-color: #252E2E;
+  color: #F0F6F0;
+}
+
+.nav-butt-seleced {
+  background-color: #252E2E;
+  color: #F0F6F0;
+}
+
+.header-itch-logo {
+  width: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header-itch-logo img {
+  width: 50px;
+  height: auto;
+}
+
+.mobile-nav {
+  width: auto;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 5px;
+  padding: 5px;
+  background-color: #F0F6F0;
+  color: #243636;
+}
+
+.mobile-nav:last-child {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.mobile-nav-butt {
+  width: 30%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 5px 0px 5px 0px;
+}
+
+.mobile-nav-butt div {
+  text-align: center;
+}
+
+.mobile-nav-butt:hover {
+  background-color: #243636;
+  color: #F0F6F0;
+}
+
+.mobile-nav-butt-seleced {
+  background-color: #243636;
+  color: #F0F6F0;
+}
+
+@media only screen and (min-width: 730px) {
+  .mobile-nav {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  .header {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 10%;
+    grid-row-gap: 0px;
+  }
+  .header-itch-logo {
+    width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin: 10px 0 10px 0;
+  }
+  .header-itch-logo img {
+    width: 50px;
+    height: auto;
+  }
+  .header-logo {
+    width: 100%;
+    padding-left: 10%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .nav {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .mobile-nav {
+    font-size: .8rem;
+    height: 40px;
+  }
+}
+
+.main {
+  background-color: #F0F6F0;
+  width: 60%;
+  margin-right: auto;
+  margin-left: auto;
+  color: #252E2E;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  text-align: center;
+  padding-bottom: 20px;
+  font-size: 1rem;
+  line-height: 1.6rem;
+}
+
+.main img {
+  width: 100%;
+  border: 5px solid #252E2E;
+}
+
+.main p {
+  width: 90%;
+}
+
+.main-butt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
+  height: 60px;
+  text-align: center;
+  font-size: 1rem;
+  background-color: #243636;
+  color: #F0F6F0;
+}
+
+@media only screen and (max-width: 960px) {
+  .main {
+    width: 70%;
+    padding-left: 7%;
+    padding-right: 7%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .main {
+    width: 70%;
+    padding-left: 7%;
+    padding-right: 7%;
+    font-size: 0.6rem;
+    line-height: 1rem;
+  }
+}
+
+.footer {
+  background-color: #243636;
+  height: 90px;
+  font-size: 0.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #F0F6F0;
+}
+
+@media only screen and (max-width: 400px) {
+  .footer {
+    height: 40px;
+    font-size: 0.4rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

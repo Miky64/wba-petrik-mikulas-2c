@@ -1,0 +1,153 @@
+.header {
+    height: 130px;
+    background-color: $mid-color;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    color: $bright-color;
+}
+
+.header-logo {
+    width: 10%;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    width: 60%;
+}
+
+.nav-butt {
+    width: 30%;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    div {
+        text-align: center;
+    }
+
+
+}
+
+.nav-butt:hover {
+    background-color: $dark-color;
+    color: $bright-color;
+}
+
+.nav-butt-seleced {
+    background-color: $dark-color;
+    color: $bright-color;
+}
+
+.header-itch-logo {
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        width: 50px;
+        height: auto;
+    }
+}
+
+
+.mobile-nav {
+    width: auto;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    
+    margin: 5px;
+    padding: 5px;
+    background-color: $bright-color;
+    color: $mid-color
+    
+}
+
+.mobile-nav:last-child{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.mobile-nav-butt {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 0px 5px 0px;
+    div {
+        text-align: center;
+    }
+}
+
+.mobile-nav-butt:hover{
+    background-color: $mid-color;
+    color: $bright-color;
+}
+
+.mobile-nav-butt-seleced{
+    background-color: $mid-color;
+    color: $bright-color;
+}
+
+@media only screen and (min-width: 730px) {
+    .mobile-nav{
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 730px) {
+    .header {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 10%;
+        grid-row-gap: 0px;
+    }
+
+    .header-itch-logo {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin: 10px 0 10px 0;
+    
+        img {
+            width: 50px;
+            height: auto;
+        }
+    }
+
+    .header-logo {
+        width: 100%;
+        padding-left: 10%;
+        flex-direction: row-reverse;
+    }
+
+
+    .nav{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .mobile-nav{
+        font-size: .8rem;
+        height: 40px;
+    }
+
+
+
+}

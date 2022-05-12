@@ -1,0 +1,15 @@
+$bright-color: #F0F6F0;
+$mid-color: #243636;
+$dark-color: #252E2E;
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: $dark-color;
+
+    font-family: 'Press Start 2P', cursive;
+}
+
+@import "_header.scss";
+@import "_main.scss";
+@import "_footer.scss";

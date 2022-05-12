@@ -1,0 +1,17 @@
+.footer{
+    background-color: $mid-color;
+    height: 90px;
+    font-size: 0.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $bright-color;
+}
+
+@media only screen and (max-width: 400px) {
+    .footer{
+        height: 40px;
+        font-size: 0.4rem;
+    }
+
+}
